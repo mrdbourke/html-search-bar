@@ -1,0 +1,56 @@
+/* Give the body a max width of 750 and center all elements on the page with a gap of 25px
+the top of the page should have a margin of 50px  */
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    /* Add some padding of 5 percent of screen size */
+    padding: 5vw;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+/* Give the search wrapper label a larger text size */
+.search-wrapper label {
+    font-size: 1.5rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+}
+
+.card>.number {
+    margin-bottom: .25rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card>.additive-name {
+    margin-bottom: .25rem;
+    font-weight: bold;
+}
+
+.card>.description {
+    font-size: 1rem;
+    color: #777
+}
+
+.hide {
+    display: none;
+}
